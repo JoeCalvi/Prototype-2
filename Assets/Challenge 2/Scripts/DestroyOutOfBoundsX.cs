@@ -11,7 +11,7 @@ public class DestroyOutOfBoundsX : MonoBehaviour
     void Update()
     {
         // Destroy dogs if x position less than left limit
-        if (transform.position.z > leftLimit)
+        if (transform.position.x < leftLimit)
         {
             Destroy(gameObject);
         } 
